@@ -552,7 +552,7 @@ void Flight_Mode_Set(u8 dT_ms)
 		////
 		if(CH_N[AUX1]<-300)
 		{
-			flag.flight_mode = ATT_STAB;
+			flag.flight_mode = LOC_HOLD;
 		}
 		else if(CH_N[AUX1]<200)
 		{
@@ -560,7 +560,7 @@ void Flight_Mode_Set(u8 dT_ms)
 		}
 		else
 		{
-			flag.flight_mode = RETURN_HOME;
+			flag.flight_mode = LOC_HOLD;
 		}
 	}
 	
